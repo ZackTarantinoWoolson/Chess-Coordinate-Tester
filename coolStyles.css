@@ -1,0 +1,57 @@
+
+:root {
+    --green: #119e4e;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: none !important;
+}
+
+button#start{
+    width: 100px;
+    height: 60px;
+    background: var(--green);
+    border: 1px solid black !important;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+td[id*='_7']:nth-child(even),td[id*='_5']:nth-child(even),td[id*='_3']:nth-child(even),
+td[id*='_1']:nth-child(even) {
+    background-color: var(--green);
+}
+
+td[id*='_8']:nth-child(odd),td[id*='_6']:nth-child(odd) ,td[id*='_4']:nth-child(odd),
+td[id*='_2']:nth-child(odd)  {
+    background-color: var(--green);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 48%;
+    margin-bottom: 1em;
+}

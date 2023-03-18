@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chessboard Trainer</title>
+    <link rel="stylesheet" type="text/css" href="coolStyles.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="column">
+            <h2>Column 1</h2>
+
+            <p>Learn to quickly follow and record chess coordinates and annotation.<br>
+                Identify squares and Answer as many as you can in 30 seconds
+            </p>
+
+            <h1 id="sq_2_click"></h1>
+
+            <button id="start" onclick="start_test()">Start Test</button>
+
+            <div id="clock"></div>
+
+            <div id="stopwatch">00:00:00</div>
+        </div>
+        <div class="column">
+            <h2>Column 2</h2>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>8</th>
+                        <td id="_8a"><button></button></td>
+                        <td id="_8b"><button></button></td>
+                        <td id="_8c"><button></button></td>
+                        <td id="_8d"><button></button></td>
+                        <td id="_8e"><button></button></td>
+                        <td id="_8f"><button></button></td>
+                        <td id="_8g"><button></button></td>
+                        <td id="_8h"><button></button></td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td id="_7a"><button></button></td>
+                        <td id="_7b"><button></button></td>
+                        <td id="_7c"><button></button></td>
+                        <td id="_7d"><button></button></td>
+                        <td id="_7e"><button></button></td>
+                        <td id="_7f"><button></button></td>
+                        <td id="_7g"><button></button></td>
+                        <td id="_7h"><button></button></td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td id="_6a"><button></button></td>
+                        <td id="_6b"><button></button></td>
+                        <td id="_6c"><button></button></td>
+                        <td id="_6d"><button></button></td>
+                        <td id="_6e"><button></button></td>
+                        <td id="_6f"><button></button></td>
+                        <td id="_6g"><button></button></td>
+                        <td id="_6h"><button></button></td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td id="_5a"><button></button></td>
+                        <td id="_5b"><button></button></td>
+                        <td id="_5c"><button></button></td>
+                        <td id="_5d"><button></button></td>
+                        <td id="_5e"><button></button></td>
+                        <td id="_5f"><button></button></td>
+                        <td id="_5g"><button></button></td>
+                        <td id="_5h"><button></button></td>
+
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td id="_4a"><button></button></td>
+                        <td id="_4b"><button></button></td>
+                        <td id="_4c"><button></button></td>
+                        <td id="_4d"><button></button></td>
+                        <td id="_4e"><button></button></td>
+                        <td id="_4f"><button></button></td>
+                        <td id="_4g"><button></button></td>
+                        <td id="_4h"><button></button></td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td id="_3a"><button></button></td>
+                        <td id="_3b"><button></button></td>
+                        <td id="_3c"><button></button></td>
+                        <td id="_3d"><button></button></td>
+                        <td id="_3e"><button></button></td>
+                        <td id="_3f"><button></button></td>
+                        <td id="_3g"><button></button></td>
+                        <td id="_3h"><button></button></td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td id="_2a"><button></button></td>
+                        <td id="_2b"><button></button></td>
+                        <td id="_2c"><button></button></td>
+                        <td id="_2d"><button></button></td>
+                        <td id="_2e"><button></button></td>
+                        <td id="_2f"><button></button></td>
+                        <td id="_2g"><button></button></td>
+                        <td id="_2h"><button></button></td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td id="_1a"><button></button></td>
+                        <td id="_1b"><button></button></td>
+                        <td id="_1c"><button></button></td>
+                        <td id="_1d"><button></button></td>
+                        <td id="_1e"><button></button></td>
+                        <td id="_1f"><button></button></td>
+                        <td id="_1g"><button></button></td>
+                        <td id="_1h"><button></button></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>
+                        <th>E</th>
+                        <th>F</th>
+                        <th>G</th>
+                        <th>H</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="chess_trainer.js"></script>
+
+</body>
+
+</html>
