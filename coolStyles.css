@@ -1,4 +1,3 @@
-
 :root {
     --green: #119e4e;
 }
@@ -7,6 +6,7 @@ table {
     border-collapse: collapse;
     margin: auto;
 }
+
 td {
     width: 60px;
     height: 60px;
@@ -17,14 +17,14 @@ td {
     border: 1px solid black;
 }
 
-button{
+button {
     width: 60px;
     height: 60px;
     background: transparent;
     border: none !important;
 }
 
-button#start{
+button#start {
     width: 100px;
     height: 60px;
     background: var(--green);
@@ -35,13 +35,17 @@ button#start{
 }
 
 
-td[id*='_7']:nth-child(even),td[id*='_5']:nth-child(even),td[id*='_3']:nth-child(even),
-td[id*='_1']:nth-child(even) {
+td[id*='7']:nth-child(even),
+td[id*='5']:nth-child(even),
+td[id*='3']:nth-child(even),
+td[id*='1']:nth-child(even) {
     background-color: var(--green);
 }
 
-td[id*='_8']:nth-child(odd),td[id*='_6']:nth-child(odd) ,td[id*='_4']:nth-child(odd),
-td[id*='_2']:nth-child(odd)  {
+td[id*='8']:nth-child(odd),
+td[id*='6']:nth-child(odd),
+td[id*='4']:nth-child(odd),
+td[id*='2']:nth-child(odd) {
     background-color: var(--green);
 }
 
@@ -54,4 +58,21 @@ td[id*='_2']:nth-child(odd)  {
 .column {
     flex-basis: 48%;
     margin-bottom: 1em;
+}
+
+#countdown {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 15em;
+    z-index: 9999;
+}
+#inner_div{
+    padding-left: 50%;
+    /* padding-top: 20%; */
+}
+
+#chessboard {
+    position: absolute;
+    text-align: center; 
 }

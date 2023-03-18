@@ -9,129 +9,140 @@
 
 <body>
 
+    <div>
+        <!-- <h1 id="countdown"></h1> -->
+    </div>
+
     <div class="container">
         <div class="column">
-            <h2>Column 1</h2>
 
             <p>Learn to quickly follow and record chess coordinates and annotation.<br>
                 Identify squares and Answer as many as you can in 30 seconds
             </p>
-
-            <h1 id="sq_2_click"></h1>
 
             <button id="start" onclick="start_test()">Start Test</button>
 
             <div id="clock"></div>
 
             <div id="stopwatch">00:00:00</div>
+
+            <h1 id="sq_2_click"></h1>
+
+            <h1>Score:</h1>
+            <h2 id="score"></h2>
         </div>
         <div class="column">
-            <h2>Column 2</h2>
 
-            <table>
-                <tbody>
-                    <tr>
-                        <th>8</th>
-                        <td id="_8a"><button></button></td>
-                        <td id="_8b"><button></button></td>
-                        <td id="_8c"><button></button></td>
-                        <td id="_8d"><button></button></td>
-                        <td id="_8e"><button></button></td>
-                        <td id="_8f"><button></button></td>
-                        <td id="_8g"><button></button></td>
-                        <td id="_8h"><button></button></td>
-                    </tr>
-                    <tr>
-                        <th>7</th>
-                        <td id="_7a"><button></button></td>
-                        <td id="_7b"><button></button></td>
-                        <td id="_7c"><button></button></td>
-                        <td id="_7d"><button></button></td>
-                        <td id="_7e"><button></button></td>
-                        <td id="_7f"><button></button></td>
-                        <td id="_7g"><button></button></td>
-                        <td id="_7h"><button></button></td>
-                    </tr>
-                    <tr>
-                        <th>6</th>
-                        <td id="_6a"><button></button></td>
-                        <td id="_6b"><button></button></td>
-                        <td id="_6c"><button></button></td>
-                        <td id="_6d"><button></button></td>
-                        <td id="_6e"><button></button></td>
-                        <td id="_6f"><button></button></td>
-                        <td id="_6g"><button></button></td>
-                        <td id="_6h"><button></button></td>
-                    </tr>
-                    <tr>
-                        <th>5</th>
-                        <td id="_5a"><button></button></td>
-                        <td id="_5b"><button></button></td>
-                        <td id="_5c"><button></button></td>
-                        <td id="_5d"><button></button></td>
-                        <td id="_5e"><button></button></td>
-                        <td id="_5f"><button></button></td>
-                        <td id="_5g"><button></button></td>
-                        <td id="_5h"><button></button></td>
+            <div id="chessboard">
+                <div id="inner_div">
+                    <h1 id="countdown"></h1>
+                </div>
 
-                    </tr>
-                    <tr>
-                        <th>4</th>
-                        <td id="_4a"><button></button></td>
-                        <td id="_4b"><button></button></td>
-                        <td id="_4c"><button></button></td>
-                        <td id="_4d"><button></button></td>
-                        <td id="_4e"><button></button></td>
-                        <td id="_4f"><button></button></td>
-                        <td id="_4g"><button></button></td>
-                        <td id="_4h"><button></button></td>
-                    </tr>
-                    <tr>
-                        <th>3</th>
-                        <td id="_3a"><button></button></td>
-                        <td id="_3b"><button></button></td>
-                        <td id="_3c"><button></button></td>
-                        <td id="_3d"><button></button></td>
-                        <td id="_3e"><button></button></td>
-                        <td id="_3f"><button></button></td>
-                        <td id="_3g"><button></button></td>
-                        <td id="_3h"><button></button></td>
-                    </tr>
-                    <tr>
-                        <th>2</th>
-                        <td id="_2a"><button></button></td>
-                        <td id="_2b"><button></button></td>
-                        <td id="_2c"><button></button></td>
-                        <td id="_2d"><button></button></td>
-                        <td id="_2e"><button></button></td>
-                        <td id="_2f"><button></button></td>
-                        <td id="_2g"><button></button></td>
-                        <td id="_2h"><button></button></td>
-                    </tr>
-                    <tr>
-                        <th>1</th>
-                        <td id="_1a"><button></button></td>
-                        <td id="_1b"><button></button></td>
-                        <td id="_1c"><button></button></td>
-                        <td id="_1d"><button></button></td>
-                        <td id="_1e"><button></button></td>
-                        <td id="_1f"><button></button></td>
-                        <td id="_1g"><button></button></td>
-                        <td id="_1h"><button></button></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th>A</th>
-                        <th>B</th>
-                        <th>C</th>
-                        <th>D</th>
-                        <th>E</th>
-                        <th>F</th>
-                        <th>G</th>
-                        <th>H</th>
-                    </tr>
-                </tbody>
-            </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>8</th>
+                            <td id="a8"><button></button></td>
+                            <td id="b8"><button></button></td>
+                            <td id="c8"><button></button></td>
+                            <td id="d8"><button></button></td>
+                            <td id="e8"><button></button></td>
+                            <td id="f8"><button></button></td>
+                            <td id="g8"><button></button></td>
+                            <td id="h8"><button></button></td>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <td id="a7"><button></button></td>
+                            <td id="b7"><button></button></td>
+                            <td id="c7"><button></button></td>
+                            <td id="d7"><button></button></td>
+                            <td id="e7"><button></button></td>
+                            <td id="f7"><button></button></td>
+                            <td id="g7"><button></button></td>
+                            <td id="h7"><button></button></td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td id="a6"><button></button></td>
+                            <td id="b6"><button></button></td>
+                            <td id="c6"><button></button></td>
+                            <td id="d6"><button></button></td>
+                            <td id="e6"><button></button></td>
+                            <td id="f6"><button></button></td>
+                            <td id="g6"><button></button></td>
+                            <td id="h6"><button></button></td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td id="a5"><button></button></td>
+                            <td id="b5"><button></button></td>
+                            <td id="c5"><button></button></td>
+                            <td id="d5"><button></button></td>
+                            <td id="e5"><button></button></td>
+                            <td id="f5"><button></button></td>
+                            <td id="g5"><button></button></td>
+                            <td id="h5"><button></button></td>
+
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td id="a4"><button></button></td>
+                            <td id="b4"><button></button></td>
+                            <td id="c4"><button></button></td>
+                            <td id="d4"><button></button></td>
+                            <td id="e4"><button></button></td>
+                            <td id="f4"><button></button></td>
+                            <td id="g4"><button></button></td>
+                            <td id="h4"><button></button></td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td id="a3"><button></button></td>
+                            <td id="b3"><button></button></td>
+                            <td id="c3"><button></button></td>
+                            <td id="d3"><button></button></td>
+                            <td id="e3"><button></button></td>
+                            <td id="f3"><button></button></td>
+                            <td id="g3"><button></button></td>
+                            <td id="h3"><button></button></td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td id="a2"><button></button></td>
+                            <td id="b2"><button></button></td>
+                            <td id="c2"><button></button></td>
+                            <td id="d2"><button></button></td>
+                            <td id="e2"><button></button></td>
+                            <td id="f2"><button></button></td>
+                            <td id="g2"><button></button></td>
+                            <td id="h2"><button></button></td>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <td id="a1"><button></button></td>
+                            <td id="b1"><button></button></td>
+                            <td id="c1"><button></button></td>
+                            <td id="d1"><button></button></td>
+                            <td id="e1"><button></button></td>
+                            <td id="f1"><button></button></td>
+                            <td id="g1"><button></button></td>
+                            <td id="h1"><button></button></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>E</th>
+                            <th>F</th>
+                            <th>G</th>
+                            <th>H</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
